@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="trenduce:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="trenduce.war">
+      <element id="artifact" artifact-name="trenduce:war exploded" />
+    </root>
+  </artifact>
+</component>
