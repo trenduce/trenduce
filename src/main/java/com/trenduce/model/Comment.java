@@ -1,5 +1,7 @@
 package com.trenduce.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
@@ -9,10 +11,26 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Comment {
 
+    @JsonProperty("User")
     private String user;
+
+    @JsonProperty("text")
     private String text;
+
+    @JsonIgnore
     private long createdAt;
+
+    @JsonProperty("createdAt")
     private String displayCreatedAt;
+
+    public Comment() {
+
+        //Test data -- remove later
+        user = "Kumar";
+        text = " What a style sirji";
+        createdAt = 1234987;
+        displayCreatedAt = "11-Jan-2015";
+    }
 
     public String getUser() {
         return user;

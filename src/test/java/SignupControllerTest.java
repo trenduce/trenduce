@@ -1,3 +1,4 @@
+import com.trenduce.controller.CollageController;
 import com.trenduce.controller.HomeController;
 import com.trenduce.controller.LoginController;
 import com.trenduce.controller.SignupController;
@@ -20,24 +21,30 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 public class SignupControllerTest {
 
     @InjectMocks
-    private LoginController controller;
+    private CollageController collageController;
 
-    private MockMvc mockMvc;
+    @InjectMocks
+    private LoginController loginController;
+
+    private MockMvc mockMvcCollage;
+    private MockMvc mockMvcLogin;
 
 
     @Before
     public void setup(){
         MockitoAnnotations.initMocks(this);
 
-        mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
+        mockMvcCollage = MockMvcBuilders.standaloneSetup(collageController).build();
+
+        mockMvcLogin = MockMvcBuilders.standaloneSetup(loginController).build();
     }
 
     @Test
     public void test() throws Exception{
 
-        //mockMvc.perform(get("/login")).andDo(print());
+        mockMvcCollage.perform(get("/styles")).andDo(print());
 
-        mockMvc.perform(post("/login").contentType(MediaType.APPLICATION_JSON).
+        mockMvcLogin.perform(post("/login").contentType(MediaType.APPLICATION_JSON).
                 content("{\"userName\":\"pra\"," +
                 "\"emailID\":\"a\",\"password\":\"\"}"))
                 .andDo(print());

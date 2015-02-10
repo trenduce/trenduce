@@ -2,6 +2,9 @@ package com.trenduce.controller;
 
 import com.trenduce.model.Collage;
 import com.trenduce.model.Comment;
+import com.trenduce.services.CollageService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,12 +22,19 @@ import java.util.List;
 @RequestMapping(value = "/styles")
 public class CollageController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @Autowired
+    private CollageService collageService;
+
+    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody
     List<Collage> getAll(){
 
-        List<Collage> list = new ArrayList<Collage>();
+        List<Collage> list = new ArrayList<Collage>(); //collageService.getAllCollages();
 
+        Collage collage = new Collage();
+        list.add(collage);
+
+//        collageService.save(collage);
 
         return list;
     }

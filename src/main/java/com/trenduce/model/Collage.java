@@ -1,8 +1,12 @@
 package com.trenduce.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,21 +16,59 @@ import java.util.List;
 public class Collage {
 
     @Id
+    @JsonProperty("id")
     private String id;
+
+    @JsonProperty("createBy")
     private String createdBy; //User id
+
+    @JsonProperty("lastUpdated")
     private String lastUpdated; //Last updated
+
+    @JsonProperty("title")
     private String title; //Collage Title
 
+    @JsonProperty("image")
+    private String imageUrl;
+
+    @JsonIgnore
     private List<String> products; //Products used to create the style
 
+
+    @JsonProperty("Price")
     private Price price; //Sell price of the style
 
+    @JsonProperty("viewCount")
     private long viewCount; // Every time user clicks on this style
+
+    @JsonProperty("likesCount")
     private long likesCount;
 
+    @JsonProperty("comments")
     private List<Comment> comments;
 
     public Collage() {
+        id = "1234";
+        createdBy = "Mr Kumar";
+        lastUpdated = "15-Jan-2015";
+        title = "What a style";
+        imageUrl = "http://media.style.com/image/slideshows/editors/amber-kallor/2015/january/126/590/885/chanel-headphones-lexi-boling.jpg";
+        products = new ArrayList<String>();
+        products.add("Product_1_Id");
+        products.add("Product_2_Id");
+
+        price = new Price();
+        price.setAcquired(new BigDecimal(100));
+        price.setPublished(new BigDecimal(150));
+
+        viewCount = 500;
+        likesCount = 145;
+
+        comments = new ArrayList<Comment>();
+        Comment comment = new Comment();
+        comments.add(comment);
+        comments.add(comment);
+
     }
 
     public String getId() {
@@ -59,6 +101,14 @@ public class Collage {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public List<String> getProducts() {
