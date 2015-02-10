@@ -22,8 +22,8 @@ import javax.inject.Inject;
 /**
  * Created by prafulmantale on 2/9/15.
  */
-@Configuration
-@EnableSocial
+//@Configuration
+//@EnableSocial
 public class SocialConfig implements SocialConfigurer{
 
 //    @Inject
@@ -32,25 +32,25 @@ public class SocialConfig implements SocialConfigurer{
     @Override
     public void addConnectionFactories(ConnectionFactoryConfigurer connectionFactoryConfigurer, Environment environment) {
 
-        connectionFactoryConfigurer.addConnectionFactory(new TwitterConnectionFactory(
-                environment.getProperty("twitter.appKey"),
-                environment.getProperty("twitter.appSecrete")
-        ));
-
-        connectionFactoryConfigurer.addConnectionFactory(new FacebookConnectionFactory(
-                environment.getProperty("facebook.appKey"),
-                environment.getProperty("facebook.appSecrete")
-        ));
-
-        connectionFactoryConfigurer.addConnectionFactory(new GoogleConnectionFactory(
-                environment.getProperty("google.appKey"),
-                environment.getProperty("google.appSecrete")
-        ));
-
-        connectionFactoryConfigurer.addConnectionFactory(new LinkedInConnectionFactory(
-                environment.getProperty("linkedin.appKey"),
-                environment.getProperty("linkedin.appSecrete")
-        ));
+//        connectionFactoryConfigurer.addConnectionFactory(new TwitterConnectionFactory(
+//                environment.getProperty("twitter.appKey"),
+//                environment.getProperty("twitter.appSecrete")
+//        ));
+//
+//        connectionFactoryConfigurer.addConnectionFactory(new FacebookConnectionFactory(
+//                environment.getProperty("facebook.appKey"),
+//                environment.getProperty("facebook.appSecrete")
+//        ));
+//
+//        connectionFactoryConfigurer.addConnectionFactory(new GoogleConnectionFactory(
+//                environment.getProperty("google.appKey"),
+//                environment.getProperty("google.appSecrete")
+//        ));
+//
+//        connectionFactoryConfigurer.addConnectionFactory(new LinkedInConnectionFactory(
+//                environment.getProperty("linkedin.appKey"),
+//                environment.getProperty("linkedin.appSecrete")
+//        ));
     }
 
     @Override
@@ -58,13 +58,14 @@ public class SocialConfig implements SocialConfigurer{
         return new UserIdSource() {
             @Override
             public String getUserId() {
-                Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-
-                if(authentication == null){
-                    throw new IllegalStateException("Unable to get connection repository. no user");
-                }
-
-                return authentication.getName();
+//                Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//
+//                if(authentication == null){
+//                    throw new IllegalStateException("Unable to get connection repository. no user");
+//                }
+//
+//                return authentication.getName();
+                return null;
             }
         };
     }
