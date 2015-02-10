@@ -22,6 +22,12 @@ import java.util.List;
 @RequestMapping(value = "/styles")
 public class CollageController {
 
+    /*
+
+        Implement pagination
+
+     */
+
     @Autowired
     private CollageService collageService;
 
