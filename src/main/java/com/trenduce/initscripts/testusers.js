@@ -1,7 +1,3 @@
-/**
- * Created by prafulmantale on 2/14/15.
- */
-
 db.users.insert({_class:'com.trenduce.models.social.User',emailId : '', username:'User1', password:'trenduce', likesCount : 0, commentsCount : 0, followersCount : 0, followingCount : 0, trenducePoints : 0});
 db.users.insert({_class:'com.trenduce.models.social.User',emailId : '', username:'User2', password:'trenduce', likesCount : 0, commentsCount : 0, followersCount : 0, followingCount : 0, trenducePoints : 0});
 db.users.insert({_class:'com.trenduce.models.social.User',emailId : '', username:'User3', password:'trenduce', likesCount : 0, commentsCount : 0, followersCount : 0, followingCount : 0, trenducePoints : 0});
