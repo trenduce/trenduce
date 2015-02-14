@@ -3,6 +3,8 @@ package com.trenduce.controller;
 import com.trenduce.model.Collage;
 import com.trenduce.model.Conversation;
 import com.trenduce.model.UserProfile;
+import com.trenduce.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,21 +18,32 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public @ResponseBody
     List<UserProfile> getAllUsers(){
 
-        List<UserProfile> users = new ArrayList<UserProfile>();
+        List<UserProfile> users = userService.getAllUsers();
+
+        if(users == null || users.size() == 0){
+            users = new ArrayList<UserProfile>();
+        }
 
         return users;
     }
 
 
-    @RequestMapping(value = "/{id}")
-    public @ResponseBody UserProfile getUser(@PathVariable String id){
+    @RequestMapping(value = "/{username}")
+    public @ResponseBody UserProfile getUser(@PathVariable String username){
 
         //Find user using id
-        UserProfile user = new UserProfile();
+        UserProfile user = userService.findUserByName(username);
+
+        if(user == null){
+            user = new UserProfile();
+        }
 
         return user;
     }

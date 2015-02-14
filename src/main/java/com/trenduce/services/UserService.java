@@ -3,6 +3,7 @@ package com.trenduce.services;
 import com.trenduce.model.UserProfile;
 import com.trenduce.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +19,11 @@ public class UserService {
 
     public UserProfile findUserByName(String userName){
         return userRepository.findByUserName(userName);
+    }
+
+    public List<UserProfile> getAllUsers(){
+
+        return userRepository.findAll();
     }
 
 }

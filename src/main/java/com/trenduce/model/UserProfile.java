@@ -3,6 +3,7 @@ package com.trenduce.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,11 +26,19 @@ public class UserProfile {
     private String firstName;
     private String lastName;
     private int age;
+
     private List<String> followers;
     private List<String> following;
     private List<String> conversations;
 
+    private long trenducePoints;
+
+
     public UserProfile() {
+
+        followers = new ArrayList<String>();
+        following = new ArrayList<String>();
+        conversations = new ArrayList<String>();
     }
 
     public String getId() {
@@ -134,5 +143,13 @@ public class UserProfile {
 
     public void setConversations(List<String> conversations) {
         this.conversations = conversations;
+    }
+
+    public long getTrenducePoints() {
+        return trenducePoints;
+    }
+
+    public void setTrenducePoints(long trenducePoints) {
+        this.trenducePoints = trenducePoints;
     }
 }
