@@ -25,10 +25,7 @@ public class Conversation {
     public Conversation() {
     }
 
-    public Conversation(String fromUser, String toUser) {
-        this.fromUser = fromUser;
-        this.toUser = toUser;
-    }
+
 
     public String getId() {
         return id;
@@ -76,5 +73,35 @@ public class Conversation {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+
+    private class Message{
+
+        private String text;
+        private long timestamp;
+        private String fromUser;
+        private String toUser;
+
+        public Message(String fromUser, String toUser, String text) {
+            this.text = text;
+            timestamp = System.currentTimeMillis();
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public long getTimestamp() {
+            return timestamp;
+        }
+
+        public void setTimestamp(long timestamp) {
+            this.timestamp = timestamp;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
     }
 }

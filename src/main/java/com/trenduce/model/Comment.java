@@ -30,6 +30,12 @@ public class Comment {
         displayCreatedAt = Utils.getFormattedCurrentTime();
     }
 
+    public Comment(String user, String text){
+        this();
+        this.user = user;
+        this.text = text;
+    }
+
     public String getUser() {
         return user;
     }
