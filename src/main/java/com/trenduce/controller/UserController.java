@@ -3,6 +3,7 @@ package com.trenduce.controller;
 import com.trenduce.model.Collage;
 import com.trenduce.model.Conversation;
 import com.trenduce.model.UserProfile;
+import com.trenduce.services.CollageService;
 import com.trenduce.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private CollageService collageService;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public @ResponseBody
@@ -89,7 +93,7 @@ public class UserController {
     @RequestMapping(value = "/{username}/styles")
     public @ResponseBody List<Collage> getAllStylesFromUser(@PathVariable String username){
 
-        return null;
+        return collageService.getAllStylesByUser(username);
     }
 
     @RequestMapping(value = "/{username}/conversations")

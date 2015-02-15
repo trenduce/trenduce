@@ -166,6 +166,21 @@ public class CollageService {
     }
 
 
+    public List<Collage> getAllStylesByUser(String userName){
+
+        if(userName == null || userName.isEmpty()){
+            return new ArrayList<Collage>();
+        }
+
+        List<Collage> list = repository.findByCreatedBy(userName);
+
+        if(list == null){
+            return new ArrayList<Collage>();
+        }
+
+        return list;
+    }
+
     public void save(Collage collage){
         repository.save(collage);
     }

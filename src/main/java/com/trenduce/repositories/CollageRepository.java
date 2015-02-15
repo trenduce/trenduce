@@ -13,5 +13,5 @@ import java.util.List;
 @Repository
 public interface CollageRepository extends MongoRepository<Collage, String>{
 
-    public List<Collage> findByCreatedBy();
+    public List<Collage> findByCreatedBy(String userName);
 }
