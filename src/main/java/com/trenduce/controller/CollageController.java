@@ -86,4 +86,12 @@ public class CollageController {
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
+
+    @RequestMapping(value = "/{id}/viewed")
+    public  ResponseEntity<String> viewed(@PathVariable String id){
+
+        boolean isSuccess = collageService.addViewed(id);
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
+    }
 }

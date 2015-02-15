@@ -62,6 +62,11 @@ public class CollageService {
         }
 
         Collage collage = getCollage(id);
+
+        if(collage == null){
+            return false;
+        }
+
         collage.getComments().add(comment);
         save(collage);
 
@@ -96,6 +101,9 @@ public class CollageService {
 
         Collage collage = getCollage(id);
 
+        if(collage == null){
+            return false;
+        }
 
         if(collage.getLikes().contains(like) == false) {
 
@@ -126,11 +134,33 @@ public class CollageService {
 
         Collage collage = getCollage(id);
 
+        if(collage == null){
+            return false;
+        }
+
         if(collage.getLikes().contains(like)) {
             collage.setLikesCount(collage.getLikesCount() - 1);
             collage.getLikes().remove(like);
             save(collage);
         }
+
+        return true;
+    }
+
+
+    public boolean addViewed(String id){
+        if(id == null || id.isEmpty()){
+            return false;
+        }
+
+        Collage collage = getCollage(id);
+
+        if(collage == null){
+            return false;
+        }
+
+        collage.setViewCount(collage.getViewCount() + 1);
+        save(collage);
 
         return true;
     }
