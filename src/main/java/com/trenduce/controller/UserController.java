@@ -5,6 +5,8 @@ import com.trenduce.model.Conversation;
 import com.trenduce.model.UserProfile;
 import com.trenduce.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,25 +50,40 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping(value = "/{id}/following/{followid}")
-    public void follow(@PathVariable String userId, @PathVariable String toFollowId){
+    @RequestMapping(value = "/{username}/following")
+    public @ResponseBody List<UserProfile> getAllFollowing(@PathVariable String username){
+
+        if(username == null || username.isEmpty()){
+
+        }
+        return userService.getAllFollowing(username);
 
     }
 
-    @RequestMapping(value = "/{id}/unfollow/{followid}")
-    public void unFollow(@PathVariable String id, @PathVariable String followid){
+    @RequestMapping(value = "/{userId}/following/{toFollowId}")
+    public ResponseEntity<String> follow(@PathVariable String userId, @PathVariable String toFollowId){
+
+        boolean isSuccess = userService.follow(userId, toFollowId);
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
 
     }
 
-    @RequestMapping(value = "/{id}/following")
-    public void getAllFollowing(@PathVariable String id){
+    @RequestMapping(value = "/{userId}/unfollow/{toUnfollowId}")
+    public ResponseEntity<String> unFollow(@PathVariable String userId, @PathVariable String toUnfollowId){
 
+        boolean isSuccess = userService.unfollow(userId, toUnfollowId);
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 
-    @RequestMapping(value = "/{id}/followers")
-    public @ResponseBody List<UserProfile> getAllFollowers(@PathVariable String id){
 
-        return null;
+    @RequestMapping(value = "/{username}/followers")
+    public @ResponseBody List<UserProfile> getAllFollowers(@PathVariable String username){
+
+        if(username == null || username.isEmpty()){
+            return new ArrayList<UserProfile>();
+        }
+
+        return userService.getAllFollowers(username);
     }
 
     @RequestMapping(value = "/{id}/styles")
