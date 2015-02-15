@@ -48,26 +48,6 @@ public class Collage {
     private List<Comment> comments;
 
     public Collage() {
-        id = "1234";
-        createdBy = "Mr Kumar";
-        lastUpdated = "15-Jan-2015";
-        title = "What a style";
-        imageUrl = "http://media.style.com/image/slideshows/editors/amber-kallor/2015/january/126/590/885/chanel-headphones-lexi-boling.jpg";
-        products = new ArrayList<String>();
-        products.add("Product_1_Id");
-        products.add("Product_2_Id");
-
-        price = new Price();
-        price.setAcquired(new BigDecimal(100));
-        price.setPublished(new BigDecimal(150));
-
-        viewCount = 500;
-        likesCount = 145;
-
-        comments = new ArrayList<Comment>();
-        Comment comment = new Comment();
-        comments.add(comment);
-        comments.add(comment);
 
     }
 

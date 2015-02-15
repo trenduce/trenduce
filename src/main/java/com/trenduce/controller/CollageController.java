@@ -35,12 +35,7 @@ public class CollageController {
     public @ResponseBody
     List<Collage> getAll(){
 
-        List<Collage> list = new ArrayList<Collage>(); //collageService.getAllCollages();
-
-        Collage collage = new Collage();
-        list.add(collage);
-
-//        collageService.save(collage);
+        List<Collage> list = collageService.getAllCollages();
 
         return list;
     }
