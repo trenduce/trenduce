@@ -75,8 +75,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1530">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1530">
+              <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
       <file leaf-file-name="testcollages.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/initscripts/testcollages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4672619" vertical-offset="10853" max-vertical-offset="12060">
-              <caret line="736" column="360" selection-start-line="736" selection-start-column="360" selection-end-line="736" selection-end-column="360" />
+            <state vertical-scroll-proportion="0.5119048" vertical-offset="9563" max-vertical-offset="12060">
+              <caret line="651" column="54" selection-start-line="651" selection-start-column="54" selection-end-line="651" selection-end-column="54" />
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
               </folding>
@@ -107,8 +107,8 @@
       <file leaf-file-name="Collage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1380">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1380">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -158,9 +158,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/initscripts/testusers.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/repositories/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trenduce/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trenduce/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/initscripts/testcollages.js" />
       </list>
     </option>
@@ -972,12 +972,12 @@
       <option name="number" value="Default" />
       <updated>1423555347290</updated>
       <workItem from="1423555348038" duration="3305000" />
-      <workItem from="1423948387602" duration="10078000" />
+      <workItem from="1423948387602" duration="10419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13383000" />
+    <option name="totallyTimeSpent" value="13724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
@@ -1311,22 +1311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1530">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/initscripts/testproducts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.4.1.RELEASE/spring-data-mongodb-1.4.1.RELEASE-sources.jar!/org/springframework/data/mongodb/repository/MongoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="555">
@@ -1351,14 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1380">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/model/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="825">
@@ -1367,10 +1343,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1530">
+          <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1380">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/initscripts/testproducts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/initscripts/testcollages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4672619" vertical-offset="10853" max-vertical-offset="12060">
-          <caret line="736" column="360" selection-start-line="736" selection-start-column="360" selection-end-line="736" selection-end-column="360" />
+        <state vertical-scroll-proportion="0.5119048" vertical-offset="9563" max-vertical-offset="12060">
+          <caret line="651" column="54" selection-start-line="651" selection-start-column="54" selection-end-line="651" selection-end-column="54" />
           <folding>
             <element signature="e#0#47#0" expanded="false" />
           </folding>

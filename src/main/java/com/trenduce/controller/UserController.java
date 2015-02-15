@@ -86,19 +86,19 @@ public class UserController {
         return userService.getAllFollowers(username);
     }
 
-    @RequestMapping(value = "/{id}/styles")
-    public @ResponseBody List<Collage> getAllStylesFromUser(@PathVariable String id){
+    @RequestMapping(value = "/{username}/styles")
+    public @ResponseBody List<Collage> getAllStylesFromUser(@PathVariable String username){
 
         return null;
     }
 
-    @RequestMapping(value = "/{id}/conversations")
-    public @ResponseBody List<Conversation> getAllConversations(@PathVariable String id){
+    @RequestMapping(value = "/{username}/conversations")
+    public @ResponseBody List<Conversation> getAllConversations(@PathVariable String username){
 
         return null;
     }
 
-    @RequestMapping(value = "/{id}/conversations/{cid")
+    @RequestMapping(value = "/{id}/conversations/{cid}")
     public @ResponseBody Conversation getAllConversation(@PathVariable String id, @PathVariable String cid){
 
         return null;
