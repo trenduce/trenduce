@@ -46,15 +46,18 @@ switch (json_last_error()) {
 }
 $requested_page = $_POST['page_num'];
 $set_limit = (($requested_page - 1) * 12) . ",12";
-//$con = mysql_connect("localhost", "root", "test");
-//mysql_select_db("InnoDB");
-//$result = mysql_query("select  * from scroll_images order by id asc limit $set_limit");
 $html = '';
-//while ($row = mysql_fetch_array($result)) {
 foreach ($images as $image) {
-    $html .= "<div><img src='" . $image . "' /></div>";
+	$html .= "<div class='col-lg-4'>";
+	$html .= "<img id='modal_trigger' href='#modal' 
+			class='img-circle'
+			src='" . $image. "' 
+			alt='Generic placeholder image'
+			style='width:140px; height:140px;'/>";
+	$html .= "<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>";
+	$html .= "<p><a class='btn btn-default' href='#' role='button'>View details</a></p>";
+	$html .= "</div>";
 }
-//}
 echo $html;
 exit;
 ?>
