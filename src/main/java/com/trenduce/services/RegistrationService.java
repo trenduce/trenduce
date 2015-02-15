@@ -20,6 +20,8 @@ public class RegistrationService {
         SignupResponse response = null;
 
         try{
+            //Check if the user already exists
+            //If yes return failure else register user
 
         }
         catch (Exception ex){
