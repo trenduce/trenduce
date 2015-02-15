@@ -42,13 +42,14 @@ public class CollageController {
 
     @RequestMapping(value = "/{id}")
     public @ResponseBody Collage getCollage(@PathVariable String id){
-        return null;
+
+        return collageService.getCollage(id);
     }
 
-    @RequestMapping(value = "/comment/{id}")
+    @RequestMapping(value = "/{id}/comments")
     public  @ResponseBody
-    Comment comment(@PathVariable String id){
-        return null;
+    List<Comment> getAllComments(@PathVariable String id){
+        return collageService.getAllComments(id);
     }
 
     @RequestMapping(value = "/like/{id}")
