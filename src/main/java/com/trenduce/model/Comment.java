@@ -2,6 +2,7 @@ package com.trenduce.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.trenduce.helper.Utils;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
@@ -25,11 +26,8 @@ public class Comment {
 
     public Comment() {
 
-        //Test data -- remove later
-        user = "Kumar";
-        text = " What a style sirji";
-        createdAt = 1234987;
-        displayCreatedAt = "11-Jan-2015";
+        createdAt = System.currentTimeMillis();
+        displayCreatedAt = Utils.getFormattedCurrentTime();
     }
 
     public String getUser() {

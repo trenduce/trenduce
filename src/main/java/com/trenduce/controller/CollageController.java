@@ -4,12 +4,11 @@ import com.trenduce.model.Collage;
 import com.trenduce.model.Comment;
 import com.trenduce.services.CollageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,15 +51,29 @@ public class CollageController {
         return collageService.getAllComments(id);
     }
 
-    @RequestMapping(value = "/like/{id}")
-    public  @ResponseBody
-    Comment like(@PathVariable String id){
-        return null;
+    @RequestMapping(value = "/{id}/comment", method = RequestMethod.POST)
+    public ResponseEntity<String>
+     addComment(@PathVariable String id, @RequestBody Comment comment){
+
+        boolean isSuccess = collageService.addComment(id, comment);
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 
-    @RequestMapping(value = "/unlike/{id}")
-    public  @ResponseBody
-    Comment unlike(@PathVariable String id){
-        return null;
+    @RequestMapping(value = "/{id}/like", method = RequestMethod.GET)
+    public  ResponseEntity<String>
+    like(@PathVariable String id){
+
+        boolean isSuccess = collageService.addLike(id);
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
+    }
+
+    @RequestMapping(value = "/{id}/unlike")
+    public  ResponseEntity<String> unlike(@PathVariable String id){
+
+        boolean isSuccess = collageService.unLike(id);
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 }
