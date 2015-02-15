@@ -2,6 +2,7 @@ package com.trenduce.controller;
 
 import com.trenduce.model.Collage;
 import com.trenduce.model.Comment;
+import com.trenduce.model.Like;
 import com.trenduce.services.CollageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -60,19 +61,28 @@ public class CollageController {
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 
-    @RequestMapping(value = "/{id}/like", method = RequestMethod.GET)
-    public  ResponseEntity<String>
-    like(@PathVariable String id){
 
-        boolean isSuccess = collageService.addLike(id);
+    @RequestMapping(value = "/{id}/likes", method = RequestMethod.GET)
+    public  @ResponseBody List<Like>
+    getAllLikes(@PathVariable String id){
+
+        return collageService.getAllLikes(id);
+    }
+
+
+    @RequestMapping(value = "/{id}/like", method = RequestMethod.POST)
+    public  ResponseEntity<String>
+    like(@PathVariable String id, @RequestBody Like like){
+
+        boolean isSuccess = collageService.addLike(id, like);
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 
     @RequestMapping(value = "/{id}/unlike")
-    public  ResponseEntity<String> unlike(@PathVariable String id){
+    public  ResponseEntity<String> unlike(@PathVariable String id, @RequestBody Like like){
 
-        boolean isSuccess = collageService.unLike(id);
+        boolean isSuccess = collageService.unLike(id, like);
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }

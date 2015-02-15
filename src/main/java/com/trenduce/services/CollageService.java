@@ -2,6 +2,7 @@ package com.trenduce.services;
 
 import com.trenduce.model.Collage;
 import com.trenduce.model.Comment;
+import com.trenduce.model.Like;
 import com.trenduce.model.UserProfile;
 import com.trenduce.repositories.CollageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,30 +68,69 @@ public class CollageService {
         return true;
     }
 
-    public boolean addLike(String id){
+    public List<Like> getAllLikes(String id){
+        Collage collage = getCollage(id);
+
+        if(collage == null || collage.getComments() == null){
+            return new ArrayList<Like>();
+        }
+
+        return collage.getLikes();
+    }
+
+    public boolean addLike(String id, Like like){
 
         if(id == null || id.isEmpty()){
             return false;
         }
 
+        if(like == null || like.getUser() == null || like.getUser().isEmpty()){
+            return false;
+        }
+
+        UserProfile profile = userService.findUserByName(like.getUser());
+
+        if(profile == null){
+            return false;
+        }
 
         Collage collage = getCollage(id);
-        collage.setLikesCount(collage.getLikesCount() + 1);
-        save(collage);
+
+
+        if(collage.getLikes().contains(like) == false) {
+
+            collage.setLikesCount(collage.getLikesCount() + 1);
+            collage.getLikes().add(like);
+
+            save(collage);
+        }
 
         return true;
     }
 
-    public boolean unLike(String id){
+    public boolean unLike(String id, Like like){
 
         if(id == null || id.isEmpty()){
             return false;
         }
 
+        if(like == null || like.getUser() == null || like.getUser().isEmpty()){
+            return false;
+        }
+
+        UserProfile profile = userService.findUserByName(like.getUser());
+
+        if(profile == null){
+            return false;
+        }
 
         Collage collage = getCollage(id);
-        collage.setLikesCount(collage.getLikesCount() - 1);
-        save(collage);
+
+        if(collage.getLikes().contains(like)) {
+            collage.setLikesCount(collage.getLikesCount() - 1);
+            collage.getLikes().remove(like);
+            save(collage);
+        }
 
         return true;
     }

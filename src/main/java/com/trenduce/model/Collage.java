@@ -47,8 +47,13 @@ public class Collage {
     @JsonProperty("comments")
     private List<Comment> comments;
 
+    @JsonProperty("likes")
+    private List<Like> likes;
+
     public Collage() {
 
+        comments = new ArrayList<Comment>();
+        likes = new ArrayList<Like>();
     }
 
     public String getId() {
@@ -129,5 +134,13 @@ public class Collage {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+    public List<Like> getLikes() {
+        return likes;
+    }
+
+    public void setLikes(List<Like> likes) {
+        this.likes = likes;
     }
 }
