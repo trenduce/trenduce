@@ -27,7 +27,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             throw  new UsernameNotFoundException("Username " + userName + " not found.");
         }
 
-        return new AccountUserDetails(user);
+        TrenduceUserDetails principle = new TrenduceUserDetails.Builder()
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .id(user.getId())
+                .password(user.getPassword())
+                .role(user.getRole())
+                .signInProvider(user.getSignInProvider())
+                .userName(user.getEmailId())
+                .build();
+
+        return principle;
 
     }
 }

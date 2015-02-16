@@ -1,5 +1,7 @@
 package com.trenduce.model;
 
+import com.trenduce.enums.Role;
+import com.trenduce.enums.SocialMediaService;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -19,6 +21,10 @@ public class UserProfile {
     private String emailId;
     private String password;
 
+    private Role role;
+
+    private SocialMediaService signInProvider;
+
     private boolean isAccountExpired;
     private boolean isAccountLocked;
     private boolean isEnabled;
@@ -36,6 +42,8 @@ public class UserProfile {
 
     public UserProfile() {
 
+        role = Role.ROLE_USER;
+        signInProvider = SocialMediaService.TRENDUCE;
         followers = new ArrayList<String>();
         following = new ArrayList<String>();
         conversations = new ArrayList<String>();
@@ -71,6 +79,22 @@ public class UserProfile {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public SocialMediaService getSignInProvider() {
+        return signInProvider;
+    }
+
+    public void setSignInProvider(SocialMediaService signInProvider) {
+        this.signInProvider = signInProvider;
     }
 
     public boolean isAccountExpired() {
