@@ -42,7 +42,7 @@ public class LoginController {
             return loginResponse;
         }
 
-        loginResponse = new LoginResponse(Status.SUCCESS);
+        loginResponse = authenticationService.login(loginRequest);
         return loginResponse;
     }
 }
