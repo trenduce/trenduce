@@ -33,9 +33,9 @@ public class CollageController {
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody
-    List<Collage> getAll(){
+    List<Collage> getAll(@RequestParam(required = false) Integer pageNumber){
 
-        List<Collage> list = collageService.getAllCollages();
+        List<Collage> list = collageService.getAllCollages(pageNumber);
 
         return list;
     }

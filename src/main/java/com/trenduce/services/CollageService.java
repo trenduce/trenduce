@@ -6,9 +6,12 @@ import com.trenduce.model.Like;
 import com.trenduce.model.UserProfile;
 import com.trenduce.repositories.CollageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -23,10 +26,25 @@ public class CollageService {
     @Autowired
     private UserService userService;
 
+    private static int PAGE_SIZE = 30;
 
-    public List<Collage> getAllCollages(){
 
-        return repository.findAll();
+    public List<Collage> getAllCollages(Integer pageNumber){
+
+        if(pageNumber == null){
+            pageNumber = 0;
+        }
+
+        Page<Collage> page = repository.findAll(new PageRequest(pageNumber, PAGE_SIZE));
+
+        Iterator<Collage> list =  page.iterator();
+        List<Collage> collages = new ArrayList<Collage>();
+        while(list.hasNext()){
+            Collage collage = list.next();
+            collages.add(collage);
+        }
+
+        return collages;
     }
 
     public  Collage getCollage(String id){
