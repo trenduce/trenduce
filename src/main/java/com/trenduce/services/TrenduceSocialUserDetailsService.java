@@ -18,6 +18,8 @@ public class TrenduceSocialUserDetailsService implements SocialUserDetailsServic
         this.userDetailsService = userDetailsService;
     }
 
+    
+
     @Override
     public SocialUserDetails loadUserByUserId(String userId) throws UsernameNotFoundException, DataAccessException {
 
