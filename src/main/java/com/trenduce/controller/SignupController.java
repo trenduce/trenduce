@@ -2,6 +2,7 @@ package com.trenduce.controller;
 
 import com.trenduce.Status;
 import com.trenduce.helper.Constants;
+import com.trenduce.helper.ErrorCodes;
 import com.trenduce.model.SignupRequest;
 import com.trenduce.model.SignupResponse;
 import com.trenduce.services.RegistrationService;
@@ -38,11 +39,11 @@ public class SignupController {
 
         if(result.hasErrors()){
             response = new SignupResponse(Status.FAILURE);
-            response.setErrorCode("Signup Failed");
+            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA);
             return response;
         }
 
-        response = new SignupResponse(Status.SUCCESS);
+        response = registrationService.register(signupRequest);
 
         return response;
     }

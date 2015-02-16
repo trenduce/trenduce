@@ -36,6 +36,16 @@ public class UserService {
         return userProfiles.get(0);
     }
 
+    public UserProfile findUserByEmailId(String emailId){
+        List<UserProfile> userProfiles = userRepository.findByEmailId(emailId);
+
+        if(userProfiles == null || userProfiles.size() == 0){
+            return null;
+        }
+
+        return userProfiles.get(0);
+    }
+
     public List<UserProfile> getAllFollowing(String userName){
 
         //TODO -- Error messages and exceptions throwing in case of improper data
@@ -166,6 +176,15 @@ public class UserService {
         return userProfiles;
     }
 
+
+    public void addUser(UserProfile userProfile){
+
+        if(userProfile == null){
+            return;
+        }
+
+        saveProfile(userProfile);
+    }
 
     private void saveProfile(UserProfile userProfile){
 
