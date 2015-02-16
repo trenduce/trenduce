@@ -17,6 +17,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private UserService service;
 
+    @Autowired
+    public UserDetailsServiceImpl(UserService service) {
+        this.service = service;
+    }
+
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 
