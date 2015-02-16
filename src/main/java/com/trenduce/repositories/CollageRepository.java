@@ -12,7 +12,7 @@ import java.util.List;
  */
 
 @Repository
-public interface CollageRepository extends PagingAndSortingRepository<Collage, String> {
+public interface CollageRepository extends MongoRepository<Collage, String> {
 
     public List<Collage> findByCreatedBy(String userName);
 }
