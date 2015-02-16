@@ -3,6 +3,7 @@ package com.trenduce.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
@@ -42,12 +43,19 @@ public class Collage {
     private long viewCount; // Every time user clicks on this style
 
     @JsonProperty("likesCount")
+    @Transient
     private long likesCount;
 
-    @JsonProperty("comments")
+    @JsonProperty("commentsCount")
+    @Transient
+    private long commentsCount;
+
+    //@JsonProperty("comments")
+    @JsonIgnore
     private List<Comment> comments;
 
-    @JsonProperty("likes")
+   // @JsonProperty("likes")
+    @JsonIgnore
     private List<Like> likes;
 
     public Collage() {
@@ -121,11 +129,14 @@ public class Collage {
     }
 
     public long getLikesCount() {
-        return likesCount;
+
+        return (likes != null) ? likes.size() : 0;
     }
 
     public void setLikesCount(long likesCount) {
-        this.likesCount = likesCount;
+        if(likes != null) {
+            this.likesCount = likes.size();
+        }
     }
 
     public List<Comment> getComments() {
@@ -142,5 +153,16 @@ public class Collage {
 
     public void setLikes(List<Like> likes) {
         this.likes = likes;
+    }
+
+    public long getCommentsCount() {
+        return (comments != null) ? comments.size() : 0;
+    }
+
+    public void setCommentsCount(long commentsCount) {
+
+        if(comments != null) {
+            this.commentsCount = comments.size();
+        }
     }
 }
