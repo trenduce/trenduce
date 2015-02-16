@@ -7,10 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="" />
     <ignored path="trenduce.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,8 +78,8 @@
       <file leaf-file-name="TrenduceSocialUserDetailsService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/services/TrenduceSocialUserDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4470939" vertical-offset="0" max-vertical-offset="671">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.55886734" vertical-offset="0" max-vertical-offset="671">
+              <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1009,12 +1006,12 @@
       <workItem from="1423948387602" duration="10869000" />
       <workItem from="1423967664662" duration="16083000" />
       <workItem from="1424050087283" duration="3006000" />
-      <workItem from="1424060426201" duration="25000" />
+      <workItem from="1424060426201" duration="171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33288000" />
+    <option name="totallyTimeSpent" value="33434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="817" extended-state="6" />
@@ -1595,8 +1592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/services/TrenduceSocialUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4470939" vertical-offset="0" max-vertical-offset="671">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.55886734" vertical-offset="0" max-vertical-offset="671">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
