@@ -34,11 +34,7 @@ public class RegistrationService {
 
         try{
 
-            UserProfile userProfile = userService.findUserByEmailId(request.getUserName());
-
-            if(userProfile != null){
-                userProfile = userService.findUserByEmailId(request.getEmailID());
-            }
+            UserProfile userProfile = userService.findUserByUserNameOrEmailId(request.getUserName(), request.getEmailID());
 
             if(userProfile != null){
                 response.setErrorCode(ErrorCodes.USER_ALREADY_EXISTS);
@@ -46,6 +42,7 @@ public class RegistrationService {
             }
             else{
                 userProfile = new UserProfile();
+                userProfile.setUserName(request.getUserName());
                 userProfile.setEmailId(request.getEmailID());
                 userProfile.setPassword(request.getPassword());
 

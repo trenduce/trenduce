@@ -51,7 +51,7 @@ public class SignupRequest {
     public String toString() {
         return "SignupRequest{" +
                 "userName='" + userName + '\'' +
-                ", emaiID='" + emailID + '\'' +
+                ", emailID='" + emailID + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

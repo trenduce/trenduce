@@ -46,6 +46,16 @@ public class UserService {
         return userProfiles.get(0);
     }
 
+    public UserProfile findUserByUserNameOrEmailId(String userName, String emailId){
+        List<UserProfile> userProfiles = userRepository.findByUserNameOrEmailId(userName, emailId);
+
+        if(userProfiles == null || userProfiles.size() == 0){
+            return null;
+        }
+
+        return userProfiles.get(0);
+    }
+
     public List<UserProfile> getAllFollowing(String userName){
 
         //TODO -- Error messages and exceptions throwing in case of improper data
