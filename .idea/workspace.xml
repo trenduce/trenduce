@@ -7,11 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/config/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/helper/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/helper/Utils.java" />
-    </list>
+    <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="" />
     <ignored path="trenduce.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,8 +98,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/helper/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34526855" vertical-offset="0" max-vertical-offset="480">
-              <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.65473145" vertical-offset="29" max-vertical-offset="480">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1121,12 +1117,12 @@
       <workItem from="1423948387602" duration="10869000" />
       <workItem from="1423967664662" duration="16083000" />
       <workItem from="1424050087283" duration="3006000" />
-      <workItem from="1424060426201" duration="6367000" />
+      <workItem from="1424060426201" duration="6547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39630000" />
+    <option name="totallyTimeSpent" value="39810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
@@ -1751,8 +1747,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/helper/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34526855" vertical-offset="0" max-vertical-offset="480">
-          <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+        <state vertical-scroll-proportion="0.65473145" vertical-offset="29" max-vertical-offset="480">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
