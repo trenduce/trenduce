@@ -125,7 +125,6 @@ public class CollageService {
 
         if(collage.getLikes().contains(like) == false) {
 
-            collage.setLikesCount(collage.getLikesCount() + 1);
             collage.getLikes().add(like);
 
             save(collage);
