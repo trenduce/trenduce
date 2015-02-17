@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:40:42 -0800] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:40:42 -0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:40:59 -0800] "GET /trenduce/index HTTP/1.1" 200 1575 http-bio-8080-exec-4 88
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:41:01 -0800] "GET /trenduce/login HTTP/1.1" 200 2267 http-bio-8080-exec-6 8
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:41:03 -0800] "GET /trenduce/signup HTTP/1.1" 200 2121 http-bio-8080-exec-7 624
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:41:05 -0800] "GET /trenduce/login HTTP/1.1" 200 2267 http-bio-8080-exec-8 2
+0:0:0:0:0:0:0:1 - - [25/Jan/2015:11:41:11 -0800] "POST /login HTTP/1.1" 404 - http-bio-8080-exec-9 0

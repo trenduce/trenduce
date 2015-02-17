@@ -17,6 +17,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private UserService service;
 
+    @Autowired
+    public UserDetailsServiceImpl(UserService service) {
+        this.service = service;
+    }
+
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 
@@ -24,9 +29,20 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         if(user == null){
             //Throw exception
+            throw  new UsernameNotFoundException("Username " + userName + " not found.");
         }
 
-        return new AccountUserDetails(user);
+        TrenduceUserDetails principle = new TrenduceUserDetails.Builder()
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .id(user.getId())
+                .password(user.getPassword())
+                .role(user.getRole())
+                .signInProvider(user.getSignInProvider())
+                .userName(user.getEmailId())
+                .build();
+
+        return principle;
 
     }
 }

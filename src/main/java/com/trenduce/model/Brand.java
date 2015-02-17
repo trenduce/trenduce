@@ -40,4 +40,6 @@ public class Brand {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+
 }

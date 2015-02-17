@@ -1,5 +1,7 @@
 package com.trenduce.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
@@ -11,7 +13,11 @@ import java.math.BigDecimal;
 public class Price {
 
     private String currency; //INR, USD etc
+
+    @JsonProperty("price")
     private BigDecimal published; //Current price
+
+    @JsonIgnore
     private BigDecimal acquired;//Price at which we acquire the product
 
     public BigDecimal getPublished() {

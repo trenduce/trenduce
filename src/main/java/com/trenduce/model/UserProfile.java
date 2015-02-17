@@ -1,8 +1,11 @@
 package com.trenduce.model;
 
+import com.trenduce.enums.Role;
+import com.trenduce.enums.SocialMediaService;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,6 +21,10 @@ public class UserProfile {
     private String emailId;
     private String password;
 
+    private Role role;
+
+    private SocialMediaService signInProvider;
+
     private boolean isAccountExpired;
     private boolean isAccountLocked;
     private boolean isEnabled;
@@ -25,11 +32,21 @@ public class UserProfile {
     private String firstName;
     private String lastName;
     private int age;
+
     private List<String> followers;
     private List<String> following;
     private List<String> conversations;
 
+    private long trenducePoints;
+
+
     public UserProfile() {
+
+        role = Role.ROLE_USER;
+        signInProvider = SocialMediaService.TRENDUCE;
+        followers = new ArrayList<String>();
+        following = new ArrayList<String>();
+        conversations = new ArrayList<String>();
     }
 
     public String getId() {
@@ -62,6 +79,22 @@ public class UserProfile {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public SocialMediaService getSignInProvider() {
+        return signInProvider;
+    }
+
+    public void setSignInProvider(SocialMediaService signInProvider) {
+        this.signInProvider = signInProvider;
     }
 
     public boolean isAccountExpired() {
@@ -134,5 +167,13 @@ public class UserProfile {
 
     public void setConversations(List<String> conversations) {
         this.conversations = conversations;
+    }
+
+    public long getTrenducePoints() {
+        return trenducePoints;
+    }
+
+    public void setTrenducePoints(long trenducePoints) {
+        this.trenducePoints = trenducePoints;
     }
 }

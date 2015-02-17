@@ -2,8 +2,11 @@ package com.trenduce.controller;
 
 import com.trenduce.Status;
 import com.trenduce.helper.Constants;
+import com.trenduce.helper.ErrorCodes;
 import com.trenduce.model.SignupRequest;
 import com.trenduce.model.SignupResponse;
+import com.trenduce.services.RegistrationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
@@ -20,6 +23,9 @@ import javax.validation.Valid;
 @Controller
 public class SignupController {
 
+    @Autowired
+    private RegistrationService registrationService;
+
     @RequestMapping(value = Constants.URL_SIGN_UP, method = RequestMethod.GET)
     public String signup(){
         return Constants.JSP_SIGNUP;
@@ -33,11 +39,11 @@ public class SignupController {
 
         if(result.hasErrors()){
             response = new SignupResponse(Status.FAILURE);
-            response.setErrorCode("Signup Failed");
+            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA);
             return response;
         }
 
-        response = new SignupResponse(Status.SUCCESS);
+        response = registrationService.register(signupRequest);
 
         return response;
     }
