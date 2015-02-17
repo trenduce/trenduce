@@ -14,8 +14,14 @@
 
 <form method="POST" enctype="multipart/form-data"
       action="/trenduce/styles/upload">
-  File to upload: <input type="file" name="file"><br /> Name: <input
-        type="text" name="name"><br /> <br /> <input type="submit"
+
+    File to upload: <input type="file" name="file"><br />
+    Name: <input type="text" name="user">
+    Title: <input type="text" name="title">
+
+    <br /> <br />
+
+    <input type="submit"
                                                      value="Upload"> Press here to upload the file!
 </form>
 
@@ -23,9 +29,6 @@
     <tr>
         <td align=center>
             <img src="../images/104501852.jpg">
-        </td>
-        <td>
-            <h1>Sample Application JSP Page</h1>
         </td>
     </tr>
 </table>

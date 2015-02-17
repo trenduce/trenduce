@@ -223,11 +223,21 @@ public class CollageService{
     }
 
 
-    public boolean addCollage(String userName, String fileUrl){
+    public boolean addCollage(String userName, String title, String fileUrl){
+
+        if(userName == null || userName.isEmpty()){
+            return false;
+        }
+
+        if(title == null || title.isEmpty()){
+            return false;
+        }
 
         try {
+
             Collage collage = new Collage();
             collage.setCreatedBy(userName);
+            collage.setTitle(title);
             collage.setImageUrl("../images/" + fileUrl);
 
             save(collage);

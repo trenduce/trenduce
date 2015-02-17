@@ -119,7 +119,8 @@ public class CollageController {
     }
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
-    public ResponseEntity<String> uploadCollage(@RequestParam(value = "name", required = false) String name,
+    public ResponseEntity<String> uploadCollage(@RequestParam(value = "user", required = true) String user,
+                                                @RequestParam(value = "title", required = true) String title,
                    @RequestParam("file") MultipartFile file){
         boolean isSuccess = false;
         String fileUrl = "";
@@ -146,8 +147,6 @@ public class CollageController {
                 stream.write(bytes);
                 stream.close();
 
-                System.out.println("Name: " + serverFile.getAbsolutePath());
-                System.out.println("Name: " + serverFile.getName());
                 fileUrl = serverFile.getName();
 
                 isSuccess = true;
@@ -160,7 +159,7 @@ public class CollageController {
         }
 
         if(isSuccess) {
-            isSuccess = collageService.addCollage("User1", fileUrl);
+            isSuccess = collageService.addCollage(user, title, fileUrl);
         }
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);

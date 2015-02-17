@@ -19,7 +19,7 @@ public class CollageCreateRequest {
     private List<String> tags;
 
     public CollageCreateRequest() {
-        
+
         products = new ArrayList<String>();
         tags = new ArrayList<String>();
     }
