@@ -2,6 +2,7 @@ package com.trenduce.controller;
 
 import com.trenduce.model.Collage;
 import com.trenduce.model.Conversation;
+import com.trenduce.model.UserUpdateRequest;
 import com.trenduce.model.UserProfile;
 import com.trenduce.services.CollageService;
 import com.trenduce.services.UserService;
@@ -38,6 +39,16 @@ public class UserController {
         }
 
         return users;
+    }
+
+    @RequestMapping(value = "", method = RequestMethod.POST)
+    public ResponseEntity<String> updateProfile(@RequestBody UserUpdateRequest request){
+
+        boolean isSuccess = false;
+
+        userService.updateUser(request);
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 
 

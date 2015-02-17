@@ -1,9 +1,9 @@
 package com.trenduce.services;
 
+import com.trenduce.model.UserUpdateRequest;
 import com.trenduce.model.UserProfile;
 import com.trenduce.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -189,6 +189,26 @@ public class UserService {
         }
 
         saveProfile(userProfile);
+    }
+
+    public boolean updateUser(UserUpdateRequest request){
+
+        if (request == null || request.getUserName() == null ||
+                request.getUserName().isEmpty()){
+            return false;
+        }
+
+        UserProfile existingProfile = findUserByName(request.getUserName());
+
+        if(existingProfile == null){
+            return false;
+        }
+
+        existingProfile.setAge(request.getAge());
+        existingProfile.setFirstName(request.getFirstName());
+        existingProfile.setLastName(request.getLastName());
+
+        return true;
     }
 
     private void saveProfile(UserProfile userProfile){
