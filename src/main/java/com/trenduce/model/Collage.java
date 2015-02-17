@@ -2,6 +2,7 @@ package com.trenduce.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.trenduce.helper.Utils;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -66,6 +67,7 @@ public class Collage {
         comments = new ArrayList<Comment>();
         likes = new ArrayList<Like>();
         tags = new ArrayList<String>();
+        lastUpdated = Utils.getFormattedCurrentTime();
     }
 
     public String getId() {

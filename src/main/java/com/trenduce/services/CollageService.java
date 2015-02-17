@@ -217,6 +217,16 @@ public class CollageService {
         return true;
     }
 
+
+    public boolean addCollage(String userName){
+
+        Collage collage = new Collage();
+        collage.setCreatedBy(userName);
+
+
+        return true;
+    }
+
     public void save(Collage collage){
         repository.save(collage);
     }

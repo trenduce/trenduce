@@ -10,7 +10,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -102,5 +107,42 @@ public class CollageController {
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
 
+    }
+
+
+
+    @RequestMapping(value = "/upload", method = RequestMethod.GET)
+    public String upload(){
+        return "upload";
+    }
+
+    @RequestMapping(value = "/upload", method = RequestMethod.POST)
+    public ResponseEntity<String> uploadCollage(@RequestParam(value = "name", required = false) String name,
+                   @RequestParam("file") MultipartFile file){
+        boolean isSuccess = false;
+
+        if (!file.isEmpty()) {
+            try {
+                byte[] bytes = file.getBytes();
+                File file1 = new File(name);
+                BufferedOutputStream stream =
+                        new BufferedOutputStream(new FileOutputStream(file1));
+                stream.write(bytes);
+                stream.close();
+
+                System.out.println("Name: " + file1.getAbsolutePath());
+
+                isSuccess = true;
+
+            } catch (Exception e) {
+
+            }
+        } else {
+
+        }
+
+        //isSuccess = collageService.addCollage("");
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 }
