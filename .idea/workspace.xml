@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/model/Brand.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/model/Brand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/model/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/model/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/controller/ProductsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/controller/ProductsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/repositories/ProductsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/repositories/ProductsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/services/ProductsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/services/ProductsService.java" />
-    </list>
+    <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="" />
     <ignored path="trenduce.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1012,12 +1006,12 @@
       <workItem from="1423948387602" duration="10869000" />
       <workItem from="1423967664662" duration="16083000" />
       <workItem from="1424050087283" duration="3006000" />
-      <workItem from="1424060426201" duration="19289000" />
+      <workItem from="1424060426201" duration="19298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52552000" />
+    <option name="totallyTimeSpent" value="52561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
