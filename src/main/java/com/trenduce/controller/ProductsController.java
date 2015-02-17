@@ -1,6 +1,8 @@
 package com.trenduce.controller;
 
 import com.trenduce.model.Product;
+import com.trenduce.services.ProductsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,12 +18,14 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductsController {
 
+    @Autowired
+    private ProductsService productsService;
 
     @RequestMapping(value = "/")
     public @ResponseBody
     List<Product> getAllProducts(){
 
-        return null;
+        return productsService.getAllProducts();
     }
 
     @RequestMapping(value = "/{id}")
