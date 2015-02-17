@@ -58,10 +58,14 @@ public class Collage {
     @JsonIgnore
     private List<Like> likes;
 
+    @JsonProperty("tags")
+    private List<String> tags;
+
     public Collage() {
 
         comments = new ArrayList<Comment>();
         likes = new ArrayList<Like>();
+        tags = new ArrayList<String>();
     }
 
     public String getId() {
@@ -164,5 +168,13 @@ public class Collage {
         if(comments != null) {
             this.commentsCount = comments.size();
         }
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
     }
 }

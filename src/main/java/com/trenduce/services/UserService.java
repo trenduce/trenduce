@@ -87,23 +87,21 @@ public class UserService {
             return false;
 
         }
-        List<UserProfile> userProfiles = userRepository.findByUserName(userName);
+        UserProfile userProfile = findUserByName(userName);
 
-        if(userProfiles == null || userProfiles.size() == 0){
+        if(userProfile == null){
             return false;
         }
 
-        List<UserProfile> toFollowUserProfiles = userRepository.findByUserName(toFollowUserName);
+        UserProfile toFollowUserProfile = findUserByName(toFollowUserName);
 
-        if(toFollowUserProfiles == null || toFollowUserProfiles.size() == 0){
+        if(toFollowUserProfile == null){
             return false;
         }
 
         try {
 
             //TODO - Validate if the relationship already exists
-            UserProfile userProfile = userProfiles.get(0);
-            UserProfile toFollowUserProfile = toFollowUserProfiles.get(0);
 
             userProfile.getFollowing().add(toFollowUserProfile.getId());
 
@@ -128,29 +126,26 @@ public class UserService {
             return false;
 
         }
-        List<UserProfile> userProfiles = userRepository.findByUserName(userName);
+        UserProfile userProfile = findUserByName(userName);
 
-        if(userProfiles == null || userProfiles.size() == 0){
+        if(userProfile == null){
             return false;
         }
 
-        List<UserProfile> toUnFollowUserProfiles = userRepository.findByUserName(toUnFollowUserName);
+        UserProfile toUnFollowUserProfile = findUserByName(toUnFollowUserName);
 
-        if(toUnFollowUserProfiles == null || toUnFollowUserProfiles.size() == 0){
+        if(toUnFollowUserProfile == null){
             return false;
         }
 
         try {
 
-            UserProfile userProfile = userProfiles.get(0);
-            UserProfile toFollowUserProfile = toUnFollowUserProfiles.get(0);
+            userProfile.getFollowing().remove(toUnFollowUserProfile.getId());
 
-            userProfile.getFollowing().remove(toFollowUserProfile.getId());
-
-            toFollowUserProfile.getFollowers().remove(userProfile.getId());
+            toUnFollowUserProfile.getFollowers().remove(userProfile.getId());
 
             saveProfile(userProfile);
-            saveProfile(toFollowUserProfile);
+            saveProfile(toUnFollowUserProfile);
         }
         catch (Exception ex){
 

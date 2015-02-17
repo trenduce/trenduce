@@ -94,4 +94,13 @@ public class CollageController {
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
+
+    @RequestMapping(value = "/{id}/tag")
+    public ResponseEntity<String> addTags(@PathVariable String id, @RequestBody List<String> tags){
+
+        boolean isSuccess = collageService.addTags(id, tags);
+
+        return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
+
+    }
 }

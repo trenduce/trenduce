@@ -198,6 +198,25 @@ public class CollageService {
         return list;
     }
 
+    public boolean addTags(String id, List<String> tags){
+
+        if(id == null || id.isEmpty() || tags == null || tags.size() == 0){
+            return false;
+        }
+
+        Collage collage = getCollage(id);
+
+        if(collage == null){
+            return false;
+        }
+
+        collage.getTags().addAll(tags);
+
+        save(collage);
+
+        return true;
+    }
+
     public void save(Collage collage){
         repository.save(collage);
     }
