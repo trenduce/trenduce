@@ -3,28 +3,285 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="trenduce:war" />
-      <artifact name="trenduce:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="866f7a83-6a62-4c0e-bcc7-e894af206fd9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/trenduce/model/Collage.class" afterPath="$PROJECT_DIR$/target/classes/com/trenduce/model/Collage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/classes/com/trenduce/model/Collage.class" afterPath="$PROJECT_DIR$/target/trenduce/WEB-INF/classes/com/trenduce/model/Collage.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/104501852.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/112048974.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/113033156.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/119759438.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/120558488.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/121546144.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/121568762.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/121901423.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/122061753.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/123899705.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125072434.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125077136.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125362008.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125516783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125737792.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125807707.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125910467.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/125922042.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/126271053.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/126362393.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/126574226.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-101.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-104.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-105.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-106.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-107.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-108.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-109.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-110.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-111.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-52.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-54.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-56.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-57.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-58.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-59.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-61.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-62.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-63.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-65.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-66.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-67.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-68.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-69.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-71.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-72.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-73.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-76.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-77.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-78.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-79.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-81.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-82.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-83.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-84.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-85.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-86.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-87.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-89.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-91.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-92.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-93.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-94.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-95.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-96.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-97.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-98.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l-99.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/defs/Sample Pics/l.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/104501852.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/104501852.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/112048974.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/112048974.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/113033156.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/113033156.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/119759438.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/119759438.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/120558488.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/120558488.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/121546144.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/121546144.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/121568762.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/121568762.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/121901423.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/121901423.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/122061753.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/122061753.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/123899705.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/123899705.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125072434.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125072434.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125077136.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125077136.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125362008.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125362008.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125516783.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125516783.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125737792.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125737792.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125807707.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125807707.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125910467.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125910467.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/125922042.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/125922042.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/126271053.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/126271053.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/126362393.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/126362393.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/126574226.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/126574226.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-10.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-100.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-100.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-101.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-101.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-102.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-102.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-103.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-103.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-104.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-104.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-105.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-105.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-106.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-106.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-107.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-107.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-108.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-108.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-109.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-109.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-11.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-110.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-110.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-111.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-111.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-12.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-13.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-14.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-15.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-16.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-17.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-17.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-18.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-18.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-19.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-19.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-2.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-20.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-20.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-21.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-21.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-22.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-22.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-23.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-23.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-24.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-24.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-25.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-25.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-26.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-26.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-27.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-27.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-28.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-28.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-29.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-29.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-3.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-30.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-30.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-31.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-31.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-32.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-32.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-33.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-33.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-34.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-34.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-35.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-35.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-36.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-36.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-37.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-37.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-38.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-38.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-39.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-39.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-4.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-40.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-40.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-41.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-41.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-42.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-42.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-43.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-43.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-44.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-44.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-45.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-45.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-46.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-46.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-47.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-47.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-48.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-48.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-49.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-49.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-5.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-50.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-50.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-51.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-51.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-52.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-52.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-53.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-53.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-54.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-54.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-55.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-55.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-56.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-56.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-57.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-57.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-58.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-58.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-59.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-59.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-6.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-60.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-60.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-61.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-61.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-62.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-62.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-63.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-63.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-64.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-64.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-65.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-65.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-66.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-66.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-67.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-67.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-68.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-68.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-69.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-69.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-7.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-70.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-70.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-71.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-71.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-72.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-72.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-73.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-73.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-74.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-74.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-75.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-75.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-76.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-76.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-77.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-77.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-78.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-78.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-79.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-79.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-8.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-80.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-80.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-81.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-81.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-82.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-82.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-83.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-83.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-84.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-84.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-85.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-85.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-86.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-86.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-87.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-87.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-88.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-88.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-89.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-89.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-9.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-9.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-90.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-90.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-91.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-91.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-92.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-92.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-93.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-93.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-94.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-94.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-95.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-95.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-96.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-96.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-97.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-97.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-98.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-98.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l-99.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l-99.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/defs/Sample Pics/l.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/l.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/trenduce/controller/CollageController.class" afterPath="$PROJECT_DIR$/target/classes/com/trenduce/controller/CollageController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/classes/com/trenduce/controller/CollageController.class" afterPath="$PROJECT_DIR$/target/trenduce/WEB-INF/classes/com/trenduce/controller/CollageController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/trenduce/services/CollageService.class" afterPath="$PROJECT_DIR$/target/classes/com/trenduce/services/CollageService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/classes/com/trenduce/services/CollageService.class" afterPath="$PROJECT_DIR$/target/trenduce/WEB-INF/classes/com/trenduce/services/CollageService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/trenduce.war" afterPath="$PROJECT_DIR$/target/trenduce.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/trenduce/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trenduce.iml" afterPath="$PROJECT_DIR$/trenduce.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/trenduce_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/trenduce_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/trenduce/WEB-INF/jsp/upload.jsp" afterPath="$PROJECT_DIR$/target/trenduce/WEB-INF/jsp/upload.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trenduce.iws" />
@@ -51,60 +308,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1979" max-vertical-offset="2970">
-              <caret line="136" column="42" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2055">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="e#3739#3740#0" expanded="true" />
-                <element signature="e#3766#3767#0" expanded="true" />
-                <element signature="e#3812#3813#0" expanded="true" />
-                <element signature="e#3844#3845#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollageController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CollageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11253197" vertical-offset="1889" max-vertical-offset="2280">
-              <caret line="125" column="47" selection-start-line="125" selection-start-column="47" selection-end-line="125" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2159" max-vertical-offset="2580">
+              <caret line="162" column="42" selection-start-line="162" selection-start-column="42" selection-end-line="162" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3468#3469#0" expanded="true" />
-                <element signature="e#3499#3500#0" expanded="true" />
+                <element signature="e#3576#3577#0" expanded="true" />
+                <element signature="e#3607#3608#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.2" vertical-offset="1535" max-vertical-offset="2490">
-              <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="735">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -113,41 +335,21 @@
       <file leaf-file-name="upload.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state vertical-scroll-proportion="-9.666667" vertical-offset="128" max-vertical-offset="615">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2984" max-vertical-offset="3855">
-              <caret line="223" column="19" selection-start-line="223" selection-start-column="19" selection-end-line="223" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="720">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollageService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CollageService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3029" max-vertical-offset="3555">
-              <caret line="222" column="10" selection-start-line="222" selection-start-column="10" selection-end-line="222" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.71611255" vertical-offset="3245" max-vertical-offset="3765">
+              <caret line="235" column="25" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1071#1080#0" expanded="true" />
+                <element signature="e#1222#1231#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,11 +399,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/repositories/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java" />
       </list>
     </option>
   </component>
@@ -403,70 +605,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -575,187 +713,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repositories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initscripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enums" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trenduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,6 +744,14 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.trenduce.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.trenduce">
@@ -1170,12 +1136,12 @@
       <workItem from="1423948387602" duration="10869000" />
       <workItem from="1423967664662" duration="16083000" />
       <workItem from="1424050087283" duration="3006000" />
-      <workItem from="1424060426201" duration="12636000" />
+      <workItem from="1424060426201" duration="16400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45899000" />
+    <option name="totallyTimeSpent" value="49663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="6" />
@@ -1194,7 +1160,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.4988067" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39885223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1204,7 +1170,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39741752" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.50119334" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1274,19 +1240,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java</url>
-          <line>42</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java</url>
-          <line>125</line>
+          <line>130</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java</url>
-          <line>105</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -1295,18 +1261,6 @@
           <line>35</line>
           <properties />
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="34" />
@@ -1511,8 +1465,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="false" />
+            <element signature="e#729#730#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1692,26 +1646,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3029" max-vertical-offset="3555">
-          <caret line="222" column="10" selection-start-line="222" selection-start-column="10" selection-end-line="222" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1071#1080#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/model/Collage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2055">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3766#3767#0" expanded="true" />
-            <element signature="e#3812#3813#0" expanded="true" />
-            <element signature="e#3844#3845#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="false" />
+            <element signature="e#3766#3767#0" expanded="false" />
+            <element signature="e#3812#3813#0" expanded="false" />
+            <element signature="e#3844#3845#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1724,26 +1667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2984" max-vertical-offset="3855">
           <caret line="223" column="19" selection-start-line="223" selection-start-column="19" selection-end-line="223" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="720">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1756,14 +1683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.2" vertical-offset="1535" max-vertical-offset="2490">
@@ -1772,14 +1691,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46035805" vertical-offset="0" max-vertical-offset="391">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="735">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.666667" vertical-offset="128" max-vertical-offset="615">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/controller/CollageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11253197" vertical-offset="1889" max-vertical-offset="2280">
-          <caret line="125" column="47" selection-start-line="125" selection-start-column="47" selection-end-line="125" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2159" max-vertical-offset="2580">
+          <caret line="162" column="42" selection-start-line="162" selection-start-column="42" selection-end-line="162" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3468#3469#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
+            <element signature="e#3576#3577#0" expanded="true" />
+            <element signature="e#3607#3608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trenduce/services/CollageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71611255" vertical-offset="3245" max-vertical-offset="3765">
+          <caret line="235" column="25" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1222#1231#0" expanded="true" />
           </folding>
         </state>
       </provider>

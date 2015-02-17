@@ -6,6 +6,8 @@ import com.trenduce.model.Like;
 import com.trenduce.model.UserProfile;
 import com.trenduce.repositories.CollageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ResourceLoaderAware;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -18,10 +20,13 @@ import java.util.List;
  * Created by prafulmantale on 1/5/15.
  */
 @Service
-public class CollageService {
+public class CollageService{
+
+    private ResourceLoader resourceLoader;
 
     @Autowired
     private CollageRepository repository;
+
 
     @Autowired
     private UserService userService;
@@ -218,11 +223,18 @@ public class CollageService {
     }
 
 
-    public boolean addCollage(String userName){
+    public boolean addCollage(String userName, String fileUrl){
 
-        Collage collage = new Collage();
-        collage.setCreatedBy(userName);
+        try {
+            Collage collage = new Collage();
+            collage.setCreatedBy(userName);
+            collage.setImageUrl("../images/" + fileUrl);
 
+            save(collage);
+        }
+        catch (Exception ex){
+            return false;
+        }
 
         return true;
     }
@@ -230,4 +242,6 @@ public class CollageService {
     public void save(Collage collage){
         repository.save(collage);
     }
+
+
 }

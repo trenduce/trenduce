@@ -4,7 +4,9 @@ import com.trenduce.model.Collage;
 import com.trenduce.model.Comment;
 import com.trenduce.model.Like;
 import com.trenduce.services.CollageService;
+import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -120,17 +122,33 @@ public class CollageController {
     public ResponseEntity<String> uploadCollage(@RequestParam(value = "name", required = false) String name,
                    @RequestParam("file") MultipartFile file){
         boolean isSuccess = false;
+        String fileUrl = "";
 
         if (!file.isEmpty()) {
             try {
+
+                String home = System.getProperty("user.home");
+
+                File dir = new File(home + File.separator + "images");
+
+                if(!dir.exists()){
+                    dir.mkdir();
+                }
                 byte[] bytes = file.getBytes();
-                File file1 = new File(name);
+
+                String fileName = String.format("%s.%s",  RandomStringUtils.randomAlphabetic(16), "jpg");
+
+                File serverFile = new File(dir.getAbsolutePath()
+                        + File.separator + fileName);
+
                 BufferedOutputStream stream =
-                        new BufferedOutputStream(new FileOutputStream(file1));
+                        new BufferedOutputStream(new FileOutputStream(serverFile));
                 stream.write(bytes);
                 stream.close();
 
-                System.out.println("Name: " + file1.getAbsolutePath());
+                System.out.println("Name: " + serverFile.getAbsolutePath());
+                System.out.println("Name: " + serverFile.getName());
+                fileUrl = serverFile.getName();
 
                 isSuccess = true;
 
@@ -141,7 +159,9 @@ public class CollageController {
 
         }
 
-        //isSuccess = collageService.addCollage("");
+        if(isSuccess) {
+            isSuccess = collageService.addCollage("User1", fileUrl);
+        }
 
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }

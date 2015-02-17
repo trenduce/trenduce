@@ -19,6 +19,17 @@
                                                      value="Upload"> Press here to upload the file!
 </form>
 
+<table border="0" cellpadding="10">
+    <tr>
+        <td align=center>
+            <img src="../images/104501852.jpg">
+        </td>
+        <td>
+            <h1>Sample Application JSP Page</h1>
+        </td>
+    </tr>
+</table>
+
 
 </body>
 </html>
