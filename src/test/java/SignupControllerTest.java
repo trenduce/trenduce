@@ -11,6 +11,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 
+import java.text.SimpleDateFormat;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
@@ -24,7 +26,7 @@ public class SignupControllerTest {
     private CollageController collageController;
 
     @InjectMocks
-    private LoginController loginController;
+    private SignupController loginController;
 
     private MockMvc mockMvcCollage;
     private MockMvc mockMvcLogin;
@@ -42,9 +44,9 @@ public class SignupControllerTest {
     @Test
     public void test() throws Exception{
 
-        mockMvcCollage.perform(get("/styles")).andDo(print());
+       // mockMvcCollage.perform(get("/styles")).andDo(print());
 
-        mockMvcLogin.perform(post("/login").contentType(MediaType.APPLICATION_JSON).
+        mockMvcLogin.perform(post("/signup").contentType(MediaType.APPLICATION_JSON).
                 content("{\"userName\":\"pra\"," +
                 "\"emailID\":\"a\",\"password\":\"\"}"))
                 .andDo(print());
