@@ -1,5 +1,8 @@
 <?php
-$url = "http://ec2-54-69-50-109.us-west-2.compute.amazonaws.com/trenduce/styles";
+$requested_page = $_POST['page_num'];
+$set_limit = (($requested_page - 1) * 12) . ",12";
+$html = '';
+$url = "http://ec2-54-69-50-109.us-west-2.compute.amazonaws.com:9000/trenduce/styles?pageNumber=".$requested_page;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -44,16 +47,13 @@ switch (json_last_error()) {
 		echo ' - Unknown error';
 		break;
 }
-$requested_page = $_POST['page_num'];
-$set_limit = (($requested_page - 1) * 12) . ",12";
-$html = '';
 foreach ($images as $image) {
 	$html .= "<div class='col-lg-4'>";
 	$html .= "<img id='modal_trigger' href='#modal' 
 			class='img-circle'
 			src='" . $image. "' 
 			alt='Generic placeholder image'
-			style='width:140px; height:140px;'/>";
+			style='width:140px; height:140px;'>";
 	$html .= "<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>";
 	$html .= "<p><a class='btn btn-default' href='#' role='button'>View details</a></p>";
 	$html .= "</div>";

@@ -1,5 +1,5 @@
 <?php
-$url = "http://ec2-54-69-50-109.us-west-2.compute.amazonaws.com/trenduce/styles";
+$url = "http://ec2-54-69-50-109.us-west-2.compute.amazonaws.com:9000/trenduce/styles?pageNumber=0";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -22,6 +22,8 @@ $count = 0;
 foreach($json_dec as $json) {
 	$images[] = $json['image'];
 }
+//var_dump($images);
+$ct = count($images);
 switch (json_last_error()) {
 	case JSON_ERROR_NONE:
 		//echo ' - No errors';
@@ -46,6 +48,7 @@ switch (json_last_error()) {
 		break;
 }
 $actual_row_count = count($images);
+$actual_row_count = 795;
 ?>
 <html lang='en'>
 <head>
@@ -83,7 +86,7 @@ background: none repeat scroll 0 0 #EEEEEE;
 border: 1px solid #CFCFCF;
 color: #000000;
 display: none;
-		 font-weight: bold;
+font-weight: bold;
 left: 1100px;
 padding: 5px;
 position: fixed;
@@ -95,12 +98,11 @@ background: none repeat scroll 0 0 #EEEEEE;
 border: 1px solid #CFCFCF;
 color: #000000;
 display: none;
-		 font-weight: bold;
+font-weight: bold;
 left: 1100px;
 padding: 5px;
 position: fixed;
 top: 100px;
-
 }
 #result{
 
@@ -116,28 +118,22 @@ $(window).scroll(function () {
 		$('#more').css("top","400");
 		$('#more').show();
 	}
-	if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	if ($(window).scrollTop() + window.innerHeight == $(document).height()) {
 		$('#more').hide();
 		$('#no-more').hide();
-		page++;
 		var data = {
 			page_num: page
 		};
-		var actual_count = "<?php echo $actual_row_count; ?>";
-		if((page-1)* 12 > actual_count){
-			$('#no-more').css("top","400");
-			$('#no-more').show();
-		}else{
-			$.ajax({
-				type: "POST",
-				url: "data.php",
-				data:data,
-				success: function(res) {
-					$("#result").append(res);
-					console.log(res);
-				}
-			});
-		}
+		$.ajax({
+			type: "POST",
+			url: "data.php",
+			data:data,
+			success: function(res) {
+				$("div.result").append(res);
+				console.log(res);
+			}
+		});
+		page++;
 	}
 });
 </script>
@@ -234,8 +230,7 @@ $(window).scroll(function () {
 		</div>
 	</section>
 </div>
-<div class="container" style="margin-top:200px">
-<div class="row">
+<div class='result'>
 <?php
 foreach ($images as $image) {
 	echo "<div class='col-lg-4'>";
@@ -243,13 +238,12 @@ foreach ($images as $image) {
 			class='img-circle'
 			src='" . $image. "' 
 			alt='Generic placeholder image'
-			style='width:140px; height:140px;'/>";
+			style='width:140px; height:140px;'>";
 	echo "<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>";
 	echo "<p><a class='btn btn-default' href='#' role='button'>View details</a></p>";
 	echo "</div>";
 }
 ?>
-</div>
 </div>
 <script type="text/javascript">
 $("#modal_trigger").leanModal({top:200, overlay:0.6, closeButton:".modal_close"});
