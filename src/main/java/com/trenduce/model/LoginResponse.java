@@ -10,6 +10,8 @@ import com.trenduce.Status;
  */
 public class LoginResponse  extends BaseResponse{
 
+    private String userId;
+
     public LoginResponse(Status status) {
         super(status);
     }
@@ -21,4 +23,13 @@ public class LoginResponse  extends BaseResponse{
 //    public LoginResponse(Status status, HttpServletResponse response) {
 //        super(status, response);
 //    }
+
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 }

@@ -46,8 +46,9 @@ public class RegistrationService {
                 userProfile.setEmailId(request.getEmailID());
                 userProfile.setPassword(request.getPassword());
 
-                userService.addUser(userProfile);
+                UserProfile profile = userService.addUser(userProfile);
 
+                response.setUserId(profile.getId());
                 response.setStatus(Status.SUCCESS);
             }
 

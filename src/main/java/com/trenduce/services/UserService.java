@@ -27,9 +27,18 @@ public class UserService {
 
 
     public UserProfile findUserByName(String userName){
+
+        UserProfile userProfile = userRepository.findOne(userName);
+
+        if(userProfile != null){
+            return userProfile;
+        }
+
         List<UserProfile> userProfiles = userRepository.findByUserName(userName);
 
         if(userProfiles == null || userProfiles.size() == 0){
+
+
             return null;
         }
 
@@ -182,13 +191,13 @@ public class UserService {
     }
 
 
-    public void addUser(UserProfile userProfile){
+    public UserProfile addUser(UserProfile userProfile){
 
         if(userProfile == null){
-            return;
+            return null;
         }
 
-        saveProfile(userProfile);
+        return saveProfile(userProfile);
     }
 
     public boolean updateUser(UserUpdateRequest request){
@@ -208,12 +217,14 @@ public class UserService {
         existingProfile.setFirstName(request.getFirstName());
         existingProfile.setLastName(request.getLastName());
 
+        saveProfile(existingProfile);
+
         return true;
     }
 
-    private void saveProfile(UserProfile userProfile){
+    private UserProfile saveProfile(UserProfile userProfile){
 
-        userRepository.save(userProfile);
+        return userRepository.save(userProfile);
     }
 
 }

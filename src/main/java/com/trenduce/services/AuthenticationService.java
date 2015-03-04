@@ -41,6 +41,7 @@ public class AuthenticationService {
 
         if(userProfile.getPassword().equals(loginRequest.getPassword())){
             response.setStatus(Status.SUCCESS);
+            response.setUserId(userProfile.getId());
         }
         else{
             response.setErrorCode(ErrorCodes.INCORRECT_CREDENTIALS);
