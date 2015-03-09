@@ -29,7 +29,8 @@ public class AuthenticationService {
         if(loginRequest == null || loginRequest.getUserName() == null || loginRequest.getUserName().isEmpty() ||
                 loginRequest.getPassword() == null || loginRequest.getPassword().isEmpty()){
 
-            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA);
+            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA_CODE);
+            response.setErrorMessage(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA_MESSAGE);
         }
 
         UserProfile userProfile = userService.findUserByUserNameOrEmailId(loginRequest.getUserName(), loginRequest.getUserName());

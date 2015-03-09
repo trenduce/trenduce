@@ -11,7 +11,7 @@ public class BaseResponse {
 
     protected Status status;
     protected String errorCode;
-    private List<ResponseTuple> responseTuples;
+    protected String errorMessage;
 
     public BaseResponse(Status status) {
         this.status = status;
@@ -55,11 +55,11 @@ public class BaseResponse {
         this.errorCode = errorCode;
     }
 
-    public List<ResponseTuple> getResponseTuples() {
-        return responseTuples;
+    public String getErrorMessage() {
+        return errorMessage;
     }
 
-    public void setResponseTuples(List<ResponseTuple> responseTuples) {
-        this.responseTuples = responseTuples;
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 }

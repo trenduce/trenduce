@@ -33,17 +33,13 @@ public class SignupController {
 
     @RequestMapping(value = Constants.URL_SIGN_UP, method = RequestMethod.POST,
             consumes = Constants.CONTENT_JSON, produces = Constants.CONTENT_JSON)
-    @ResponseBody SignupResponse signup(@Valid @RequestBody SignupRequest signupRequest, Errors result){
-
-        SignupResponse response = null;
+    @ResponseBody SignupResponse signup(@RequestBody SignupRequest signupRequest, BindingResult result){
 
         if(result.hasErrors()){
-            response = new SignupResponse(Status.FAILURE);
-            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA);
-            return response;
+            return null;
         }
 
-        response = registrationService.register(signupRequest);
+        SignupResponse response = registrationService.register(signupRequest);
 
         return response;
     }

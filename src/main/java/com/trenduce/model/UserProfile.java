@@ -1,11 +1,14 @@
 package com.trenduce.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.trenduce.enums.Role;
 import com.trenduce.enums.SocialMediaService;
+import com.trenduce.helper.Utils;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,12 +22,17 @@ public class UserProfile {
 
     private String userName;
     private String emailId;
+
+    @JsonIgnore
     private String password;
 
+    @JsonIgnore
     private Role role;
 
+    @JsonIgnore
     private SocialMediaService signInProvider;
 
+    @JsonIgnore
     private boolean isAccountExpired;
     private boolean isAccountLocked;
     private boolean isEnabled;
@@ -39,8 +47,15 @@ public class UserProfile {
 
     private long trenducePoints;
 
+    private Date createdTime;
+
+    private String displayCreatedTime;
+
 
     public UserProfile() {
+
+        createdTime = new Date();
+        displayCreatedTime = Utils.getFormattedCurrentTime();
 
         role = Role.ROLE_USER;
         signInProvider = SocialMediaService.TRENDUCE;
@@ -175,5 +190,21 @@ public class UserProfile {
 
     public void setTrenducePoints(long trenducePoints) {
         this.trenducePoints = trenducePoints;
+    }
+
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public String getDisplayCreatedTime() {
+        return displayCreatedTime;
+    }
+
+    public void setDisplayCreatedTime(String displayCreatedTime) {
+        this.displayCreatedTime = displayCreatedTime;
     }
 }

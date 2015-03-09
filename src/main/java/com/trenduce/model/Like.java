@@ -27,7 +27,7 @@ public class Like {
         displayCreatedAt = Utils.getFormattedCurrentTime();
     }
 
-    public Like(String user, String text){
+    public Like(String user){
         this();
         this.user = user;
     }

@@ -7,6 +7,7 @@ import com.trenduce.model.UserProfile;
 import com.trenduce.services.CollageService;
 import com.trenduce.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/users")
+@Scope("session")
 public class UserController {
 
     @Autowired

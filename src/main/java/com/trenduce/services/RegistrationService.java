@@ -24,25 +24,28 @@ public class RegistrationService {
         SignupResponse response = new SignupResponse(Status.FAILURE);
 
         if(request == null ||
-                ((request.getUserName() == null || request.getUserName().isEmpty()) &&
+                ((request.getFirstName() == null || request.getFirstName().isEmpty()) ||
+                        (request.getLastName() == null || request.getLastName().isEmpty()) ||
                         (request.getEmailID() == null || request.getEmailID().isEmpty())) ||
                 request.getPassword() == null || request.getPassword().isEmpty()){
 
-            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA);
+            response.setErrorCode(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA_CODE);
+            response.setErrorMessage(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA_MESSAGE);
             return  response;
         }
 
         try{
 
-            UserProfile userProfile = userService.findUserByUserNameOrEmailId(request.getUserName(), request.getEmailID());
+            UserProfile userProfile = userService.findUserByEmailId(request.getEmailID());
 
             if(userProfile != null){
-                response.setErrorCode(ErrorCodes.USER_ALREADY_EXISTS);
+                response.setErrorCode(ErrorCodes.USER_ALREADY_EXISTS_CODE);
                 return response;
             }
             else{
                 userProfile = new UserProfile();
-                userProfile.setUserName(request.getUserName());
+                userProfile.setFirstName(request.getFirstName());
+                userProfile.setLastName(request.getLastName());
                 userProfile.setEmailId(request.getEmailID());
                 userProfile.setPassword(request.getPassword());
 
