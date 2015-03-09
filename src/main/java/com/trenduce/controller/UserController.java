@@ -54,11 +54,11 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/{username}")
-    public @ResponseBody UserProfile getUser(@PathVariable String username){
+    @RequestMapping(value = "/{identication}")
+    public @ResponseBody UserProfile getUser(@PathVariable String identication){
 
         //Find user using id
-        UserProfile user = userService.findUserByName(username);
+        UserProfile user = userService.findUser(identication);
 
         if(user == null){
             user = new UserProfile();
@@ -67,20 +67,20 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping(value = "/{username}/following")
-    public @ResponseBody List<UserProfile> getAllFollowing(@PathVariable String username){
+    @RequestMapping(value = "/{identity}/following")
+    public @ResponseBody List<UserProfile> getAllFollowing(@PathVariable String identity){
 
-        if(username == null || username.isEmpty()){
-
+        if(identity == null || identity.isEmpty()){
+            return new ArrayList<UserProfile>();
         }
-        return userService.getAllFollowing(username);
+        return userService.getAllFollowing(identity);
 
     }
 
-    @RequestMapping(value = "/{userId}/following/{toFollowId}")
-    public ResponseEntity<String> follow(@PathVariable String userId, @PathVariable String toFollowId){
+    @RequestMapping(value = "/{identity}/following/{toFollowidentity}")
+    public ResponseEntity<String> follow(@PathVariable String identity, @PathVariable String toFollowidentity){
 
-        boolean isSuccess = userService.follow(userId, toFollowId);
+        boolean isSuccess = userService.follow(identity, toFollowidentity);
         return new ResponseEntity<String>(isSuccess ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
 
     }
@@ -93,14 +93,14 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/{username}/followers")
-    public @ResponseBody List<UserProfile> getAllFollowers(@PathVariable String username){
+    @RequestMapping(value = "/{identity}/followers")
+    public @ResponseBody List<UserProfile> getAllFollowers(@PathVariable String identity){
 
-        if(username == null || username.isEmpty()){
+        if(identity == null || identity.isEmpty()){
             return new ArrayList<UserProfile>();
         }
 
-        return userService.getAllFollowers(username);
+        return userService.getAllFollowers(identity);
     }
 
     @RequestMapping(value = "/{username}/styles")

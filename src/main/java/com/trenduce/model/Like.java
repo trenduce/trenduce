@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.trenduce.helper.Utils;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
+
 /**
  * Created by prafulmantale on 1/4/15.
  */
@@ -12,48 +14,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Like {
 
-    @JsonProperty("User")
-    private String user;
-
-    @JsonIgnore
-    private long createdAt;
-
-    @JsonProperty("createdAt")
-    private String displayCreatedAt;
+    @JsonProperty("uid")
+    private String userId;
 
     public Like() {
 
-        createdAt = System.currentTimeMillis();
-        displayCreatedAt = Utils.getFormattedCurrentTime();
     }
 
-    public Like(String user){
-        this();
-        this.user = user;
+    public String getUserId() {
+        return userId;
     }
 
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public long getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(long createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public String getDisplayCreatedAt() {
-        return displayCreatedAt;
-    }
-
-    public void setDisplayCreatedAt(String displayCreatedAt) {
-        this.displayCreatedAt = displayCreatedAt;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     @Override
@@ -63,13 +36,20 @@ public class Like {
 
         Like like = (Like) o;
 
-        if (!user.equals(like.user)) return false;
+        if (!userId.equals(like.userId)) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return user.hashCode();
+        return userId.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Like{" +
+                "userId='" + userId + '\'' +
+                '}';
     }
 }

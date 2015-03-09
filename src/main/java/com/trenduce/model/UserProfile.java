@@ -1,11 +1,13 @@
 package com.trenduce.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.trenduce.enums.Role;
 import com.trenduce.enums.SocialMediaService;
 import com.trenduce.helper.Utils;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,42 +22,65 @@ public class UserProfile {
     @Id
     private String id; //Each user should have a unique profile id
 
-    private String userName;
+    @Field(value = "email")
+    @JsonProperty("email")
     private String emailId;
 
+    @Field(value = "pwd")
     @JsonIgnore
     private String password;
+
+    @Field(value = "img")
+    @JsonProperty("img")
+    private String imageUrl;
 
     @JsonIgnore
     private Role role;
 
     @JsonIgnore
+    @Field(value = "signpro")
     private SocialMediaService signInProvider;
 
     @JsonIgnore
+    @Field(value = "acntexp")
     private boolean isAccountExpired;
+
+    @Field(value = "acntloc")
+    @JsonIgnore
     private boolean isAccountLocked;
+
+    @Field(value = "ena")
+    @JsonIgnore
     private boolean isEnabled;
 
+    @Field(value = "fn")
+    @JsonProperty("fn")
     private String firstName;
+
+    @Field(value = "ln")
+    @JsonProperty("ln")
     private String lastName;
+
     private int age;
 
     private List<String> followers;
+
     private List<String> following;
+
     private List<String> conversations;
 
+    @Field(value = "pts")
+    @JsonProperty("pts")
     private long trenducePoints;
 
+    @Field(value = "dt")
+    @JsonProperty("dt")
     private Date createdTime;
-
-    private String displayCreatedTime;
 
 
     public UserProfile() {
 
         createdTime = new Date();
-        displayCreatedTime = Utils.getFormattedCurrentTime();
 
         role = Role.ROLE_USER;
         signInProvider = SocialMediaService.TRENDUCE;
@@ -72,14 +97,6 @@ public class UserProfile {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public String getEmailId() {
         return emailId;
     }
@@ -94,6 +111,14 @@ public class UserProfile {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public Role getRole() {
@@ -200,11 +225,4 @@ public class UserProfile {
         this.createdTime = createdTime;
     }
 
-    public String getDisplayCreatedTime() {
-        return displayCreatedTime;
-    }
-
-    public void setDisplayCreatedTime(String displayCreatedTime) {
-        this.displayCreatedTime = displayCreatedTime;
-    }
 }

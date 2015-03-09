@@ -74,11 +74,11 @@ public class CollageService{
         }
 
         if(comment == null || comment.getText().isEmpty() ||
-                comment.getUser() == null || comment.getUser().isEmpty()){
+                comment.getUserId() == null || comment.getUserId().isEmpty()){
             return false;
         }
 
-        UserProfile profile = userService.findUserByName(comment.getUser());
+        UserProfile profile = userService.findUser(comment.getUserId());
 
         if(profile == null){
             return false;
@@ -90,7 +90,12 @@ public class CollageService{
             return false;
         }
 
+        comment.setFirstName(profile.getFirstName());
+        comment.setLastName(profile.getLastName());
+        comment.setImageUrl(profile.getImageUrl());
+
         collage.getComments().add(comment);
+
         save(collage);
 
         return true;
@@ -112,11 +117,11 @@ public class CollageService{
             return false;
         }
 
-        if(like == null || like.getUser() == null || like.getUser().isEmpty()){
+        if(like == null || like.getUserId() == null || like.getUserId().isEmpty()){
             return false;
         }
 
-        UserProfile profile = userService.findUserByName(like.getUser());
+        UserProfile profile = userService.findUser(like.getUserId());
 
         if(profile == null){
             return false;
@@ -144,11 +149,11 @@ public class CollageService{
             return false;
         }
 
-        if(like == null || like.getUser() == null || like.getUser().isEmpty()){
+        if(like == null || like.getUserId() == null || like.getUserId().isEmpty()){
             return false;
         }
 
-        UserProfile profile = userService.findUserByName(like.getUser());
+        UserProfile profile = userService.findUser(like.getUserId());
 
         if(profile == null){
             return false;

@@ -26,18 +26,17 @@ public class UserService {
     }
 
 
-    public UserProfile findUserByName(String userName){
+    public UserProfile findUser(String identity){
 
-        UserProfile userProfile = userRepository.findOne(userName);
+        UserProfile userProfile = userRepository.findOne(identity);
 
         if(userProfile != null){
             return userProfile;
         }
 
-        List<UserProfile> userProfiles = userRepository.findByUserName(userName);
+        List<UserProfile> userProfiles = userRepository.findByEmailId(identity);
 
         if(userProfiles == null || userProfiles.size() == 0){
-
 
             return null;
         }
@@ -55,20 +54,10 @@ public class UserService {
         return userProfiles.get(0);
     }
 
-    public UserProfile findUserByUserNameOrEmailId(String userName, String emailId){
-        List<UserProfile> userProfiles = userRepository.findByUserNameOrEmailId(userName, emailId);
-
-        if(userProfiles == null || userProfiles.size() == 0){
-            return null;
-        }
-
-        return userProfiles.get(0);
-    }
-
-    public List<UserProfile> getAllFollowing(String userName){
+    public List<UserProfile> getAllFollowing(String identity){
 
         //TODO -- Error messages and exceptions throwing in case of improper data
-        UserProfile userProfile = findUserByName(userName);
+        UserProfile userProfile = findUser(identity);
 
         if(userProfile == null){
             return new ArrayList<UserProfile>();
@@ -89,20 +78,20 @@ public class UserService {
         return userProfiles;
     }
 
-    public boolean follow(String userName, String toFollowUserName){
+    public boolean follow(String identity, String toFollowidentity){
 
-        if(userName == null || userName.isEmpty() ||
-                toFollowUserName == null || toFollowUserName == null){
+        if(identity == null || identity.isEmpty() ||
+                toFollowidentity == null || toFollowidentity == null){
             return false;
 
         }
-        UserProfile userProfile = findUserByName(userName);
+        UserProfile userProfile = findUser(identity);
 
         if(userProfile == null){
             return false;
         }
 
-        UserProfile toFollowUserProfile = findUserByName(toFollowUserName);
+        UserProfile toFollowUserProfile = findUser(toFollowidentity);
 
         if(toFollowUserProfile == null){
             return false;
@@ -128,20 +117,20 @@ public class UserService {
         return true;
     }
 
-    public boolean unfollow(String userName, String toUnFollowUserName){
+    public boolean unfollow(String identity, String toUnFollowIdentity){
 
-        if(userName == null || userName.isEmpty() ||
-                toUnFollowUserName == null || toUnFollowUserName == null){
+        if(identity == null || identity.isEmpty() ||
+                toUnFollowIdentity == null || toUnFollowIdentity == null){
             return false;
 
         }
-        UserProfile userProfile = findUserByName(userName);
+        UserProfile userProfile = findUser(identity);
 
         if(userProfile == null){
             return false;
         }
 
-        UserProfile toUnFollowUserProfile = findUserByName(toUnFollowUserName);
+        UserProfile toUnFollowUserProfile = findUser(toUnFollowIdentity);
 
         if(toUnFollowUserProfile == null){
             return false;
@@ -166,10 +155,10 @@ public class UserService {
     }
 
 
-    public List<UserProfile> getAllFollowers(String userName){
+    public List<UserProfile> getAllFollowers(String identity){
 
         //TODO -- Error messages and exceptions throwing in case of improper data
-        UserProfile userProfile = findUserByName(userName);
+        UserProfile userProfile = findUser(identity);
 
         if(userProfile == null){
             return new ArrayList<UserProfile>();
@@ -202,12 +191,12 @@ public class UserService {
 
     public boolean updateUser(UserUpdateRequest request){
 
-        if (request == null || request.getUserName() == null ||
-                request.getUserName().isEmpty()){
+        if (request == null || request.getUserId() == null ||
+                request.getUserId().isEmpty()){
             return false;
         }
 
-        UserProfile existingProfile = findUserByName(request.getUserName());
+        UserProfile existingProfile = findUser(request.getUserId());
 
         if(existingProfile == null){
             return false;

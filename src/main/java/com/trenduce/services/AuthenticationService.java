@@ -33,7 +33,7 @@ public class AuthenticationService {
             response.setErrorMessage(ErrorCodes.REQUEST_WITH_INSUFFICIENT_OR_ICORRECT_DATA_MESSAGE);
         }
 
-        UserProfile userProfile = userService.findUserByUserNameOrEmailId(loginRequest.getUserName(), loginRequest.getUserName());
+        UserProfile userProfile = userService.findUserByEmailId(loginRequest.getUserName());
 
         if(userProfile == null){
             response.setErrorCode(ErrorCodes.USER_DOESNOT_EXIST);

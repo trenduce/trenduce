@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.trenduce.helper.Utils;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+import java.util.Date;
 
 /**
  * Created by prafulmantale on 1/4/15.
@@ -12,36 +15,65 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Comment {
 
-    @JsonProperty("User")
-    private String user;
+    @Field(value = "uid")
+    @JsonProperty("uid")
+    private String userId;
 
+    @Field(value = "fn")
+    @JsonProperty("fn")
+    private String firstName;
+
+    @Field(value = "ln")
+    @JsonProperty("ln")
+    private String lastName;
+
+    @Field(value = "img")
+    @JsonProperty("img")
+    private String imageUrl;
+
+    @Field(value = "text")
     @JsonProperty("text")
     private String text;
 
-    @JsonIgnore
-    private long createdAt;
-
-    @JsonProperty("createdAt")
-    private String displayCreatedAt;
+    @Field(value = "dt")
+    @JsonProperty("dt")
+    private Date createdAt;
 
     public Comment() {
 
-        createdAt = System.currentTimeMillis();
-        displayCreatedAt = Utils.getFormattedCurrentTime();
+        createdAt = new Date();
     }
 
-    public Comment(String user, String text){
-        this();
-        this.user = user;
-        this.text = text;
+    public String getUserId() {
+        return userId;
     }
 
-    public String getUser() {
-        return user;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getText() {
@@ -52,20 +84,11 @@ public class Comment {
         this.text = text;
     }
 
-    public long getCreatedAt() {
+    public Date getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(long createdAt) {
+    public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
-
-    public String getDisplayCreatedAt() {
-        return displayCreatedAt;
-    }
-
-    public void setDisplayCreatedAt(String displayCreatedAt) {
-        this.displayCreatedAt = displayCreatedAt;
-    }
-
 }
