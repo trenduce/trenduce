@@ -13,6 +13,10 @@ public class ErrorCodes {
 
     public static final String LOGIN_SUCCESSFUL = "Login successful.";
 
-    public static final String USER_DOESNOT_EXIST = "User does not exist.";
-    public static final String INCORRECT_CREDENTIALS = "Incorrect user name or password.";
+    public static final String USER_DOESNOT_EXIST_CODE = "USER_DOESNOT_EXIST";
+    public static final String USER_DOESNOT_EXIST_MESSAGE = "User does not exist.";
+
+
+    public static final String INCORRECT_CREDENTIALS_CODE = "INCORRECT_CREDENTIALS";
+    public static final String INCORRECT_CREDENTIALS_MESSAGE = "Incorrect user name or password.";
 }

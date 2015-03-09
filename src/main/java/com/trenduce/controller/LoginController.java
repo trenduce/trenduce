@@ -2,6 +2,7 @@ package com.trenduce.controller;
 
 import com.trenduce.Status;
 import com.trenduce.helper.Constants;
+import com.trenduce.helper.ErrorCodes;
 import com.trenduce.model.LoginRequest;
 import com.trenduce.model.LoginResponse;
 import com.trenduce.services.AuthenticationService;
@@ -35,12 +36,7 @@ public class LoginController {
 
         LoginResponse loginResponse = null;
 
-        if(loginRequest == null ||
-                loginRequest.getPassword() == null || loginRequest.getPassword().isEmpty() ||
-                loginRequest.getUserName() == null || loginRequest.getUserName().isEmpty()){
-            loginResponse = new LoginResponse(Status.FAILURE);
-            return loginResponse;
-        }
+
 
         loginResponse = authenticationService.login(loginRequest);
         return loginResponse;

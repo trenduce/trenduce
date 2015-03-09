@@ -1,5 +1,7 @@
 package com.trenduce.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springmodules.validation.bean.conf.loader.annotation.handler.Email;
 import org.springmodules.validation.bean.conf.loader.annotation.handler.NotEmpty;
 import org.springmodules.validation.bean.conf.loader.annotation.handler.NotNull;
 
@@ -8,21 +10,23 @@ import org.springmodules.validation.bean.conf.loader.annotation.handler.NotNull;
  */
 public class LoginRequest {
 
-    @NotNull @NotEmpty
-    private String userName;
+    @NotNull @NotEmpty @Email
+    @JsonProperty("email")
+    private String emailId;
 
     @NotNull @NotEmpty
+    @JsonProperty("pwd")
     private String password;
 
     public LoginRequest() {
     }
 
-    public String getUserName() {
-        return userName;
+    public String getEmailId() {
+        return emailId;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
     }
 
     public String getPassword() {
@@ -36,7 +40,7 @@ public class LoginRequest {
     @Override
     public String toString() {
         return "LoginRequest{" +
-                "userName='" + userName + '\'' +
+                "emailId='" + emailId + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
